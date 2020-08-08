@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body>
+     <h1>JSON</h1>
+     <h2>Javascript Object Notion</h2>
+     <script>
+const user = { id: 245,
+ name: " masud",
+ friendsAge : [23,234,223], 
+ friends: ["kalam", "jamal"], 
+ lover: {
+     name : "jamila"
+ }
+ }
+// {"id":245,"name":" masud"} using JSON stringyfy 
+const userJSON = JSON.stringify(user);
+console.log(userJSON);
+
+const userFromJSON = JSON.parse(userJSON);
+console.log(userFromJSON);
+
+     </script>
+</body>
+</html>
