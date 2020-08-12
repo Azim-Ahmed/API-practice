@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>this will not confused anymore</h1>
+    <script>
+        const myObj = {
+            name : "kuddus",
+            getFullName : function(){
+                console.log(this);
+                return "mr " + this.name;
+            }
+        }
+      //myObj.getFullName();
+      const anotherName = {
+          name : "biddut"
+      }
+    //   anotherName.getFullName = myObj.getFullName;
+    //   console.log(anotherName.getFullName);
+    //   anotherName.getFullName();
+    //   myObj.getFullName();
+
+
+//revision again this module or title this video
+
+    function add (a , s){
+        console.log(this);
+        return a + s;
+    }
+    add(12,12)
+    anotherName.sum =add;
+    anotherName.sum();
+    </script>
+</body>
+</html>
